@@ -1,0 +1,11 @@
+{
+  "name": "bcts",
+  "version": "1.0.0",
+  "description": "Multi-blockchain TypeScript client lib",
+  "main": "index.js",
+  "author": "zlumer",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^3.1.6"
+  }
+}
