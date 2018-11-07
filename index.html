@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="/dist/bundle.js"></script>
+    <script>
+      document.write(
+        bcts.eth.signTx(
+          {
+            to: "0xDf08F82De32B8d460adbE8D72043E3a7e25A3B39",
+            nonce: 0,
+            gasPrice: 1e9, // 1 gwei
+            value: 1e18, // 1 ETH
+            from: "0xDf08F82De32B8d460adbE8D72043E3a7e25A3B39",
+            gasLimit: 300000,
+            data: "0x0"
+          },
+          "2bdd21761a483f71054e14f5b827213567971c676928d9a1808cbfa4b7501200"
+        )
+      );
+    </script>
+  </body>
+</html>
