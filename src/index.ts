@@ -1,3 +1,9 @@
-import * as eth from "./blockchains/eth"
+import * as eth from "./blockchains/eth";
 
-export { eth }
+export { eth };
+
+if (typeof window === "object") {
+  (<any>window).bcts = {
+    eth
+  };
+}
